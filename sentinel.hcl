@@ -1,4 +1,4 @@
 policy "bridgecrew" {
-  source            = "./sample-tf"
+  source            = "./bridgecrew.sentinel"
   enforcement_level = "hard-mandatory"
 }
