@@ -4,7 +4,7 @@ import "tfrun"
 
 param bc_api_key
 
-req = http.request("https://www.bridgecrew.cloud/api/v1/tfCloud/sentinel/" + tfrun.workspace.id).with_header("Authorization", bc_api_key)
+req = http.request("https://www.bridgecrew.cloud/api/v1/tfCloud/sentinel/ws-dr7mS1nE791uNrtK").with_header("Authorization", bc_api_key)
 resp = json.unmarshal(http.get(req).body)
 
 if (length(resp.violations) > 0) {
